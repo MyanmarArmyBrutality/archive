@@ -1,0 +1,25 @@
+
+  <div class="container" data-ng-app="myApp" data-ng-controller="myCtrl">
+    <div class="row">
+      <div class="col-md-2">
+        Search:
+      </div>
+      <div class="col-md-10">
+        <input type="text" class="search" data-ng-model="table" />
+      </div>
+    </div>
+    <br/>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+      <tr data-ng-repeat="customer in people | filter: table">
+        <td>{{customer.Name}}</td>
+        <td>{{customer.City}}</td>
+        <td>{{customer.Country}}</td>
+      </tr>
+    </table>
+    <div data-pagination="" data-num-pages="numPages()" data-current-page="currentPage" data-max-size="maxSize" data-boundary-links="true"></div>
+  </div>
