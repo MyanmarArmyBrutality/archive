@@ -51,7 +51,7 @@
 /* The alert message box */
 .alert2 {
   padding: 20px;
-  background-color: orange; /* Red */
+  background-color: #ffbf00;
   color: white;
   margin-bottom: 15px;
 }
